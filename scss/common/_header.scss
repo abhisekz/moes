@@ -1,0 +1,134 @@
+// Header related stylesheet
+header {
+  //background: rgba(0,0,0,.4);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+  position: relative;
+  color: #FFF;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  .logo {
+    width: 140px;
+    margin-top:5px;
+  }
+  .navbar {
+    height: 80px;
+    border: 0px;
+    margin-bottom:0;
+  }
+  .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 0;
+    height: 70px;
+    img.img-responsive {
+      height: 100%;
+    }
+  }
+  .navbar-nav {
+    margin-top: 11px;
+  }
+  .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:focus {
+      background: transparent;
+    }
+
+
+    &:hover {
+      border-bottom: 8px solid #24BB88;
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+  .navbar-nav>li.active>a {
+    background: transparent;
+    color: #ffffff;
+    font-weight: 900;
+    border-bottom: 8px solid #24BB88;
+  }
+
+  #sublinks {
+
+    background: rgba(0,0,0,.5);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    top:68px;
+    right: 0;
+
+
+    @media (min-width: 768px){
+      display: block;
+      transition: height 2s linear;
+      position: absolute;
+      height: 0;
+      overflow: hidden;
+      li {
+        padding: 15px;
+        width: 230px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+  }
+  .service:hover {
+    #sublinks {
+      height: auto;
+    }
+  }
+
+}
+@media (max-width: 767px) {
+  header {
+    .navbar-toggle {
+      margin-top: 15px;
+    }
+    .navbar {
+      height: 65px;
+      border: 0px;
+      margin-bottom: 0;
+    }
+    .navbar-brand {
+      padding-top: 5px;
+      padding-bottom: 0;
+      height: 55px;
+    }
+    .navbar-collapse {
+      margin-top: 10px;
+      //height: 1px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-toggle .icon-bar {
+      background: #fff;
+    }
+    #sublinks {
+      padding: 0px 25px;
+      li {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+    .search-nav {
+      float: right;
+      padding: 18px;
+      font-size: 1.6em;
+      color: #fff;
+    }
+    #collapseSearch {
+      position: absolute;
+      top: 66px;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 200;
+    }
+  }
+
+}

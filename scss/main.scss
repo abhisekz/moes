@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,800);
+
+/* variables for the site */
+$bgColor : #fbfbfb;
+$textColor : #333;
+$borderColor : #91b9f7;
+$green : #a9c938;
+$blue : #169fe6;
+$red : #ce415d;
+$content-font : "Raleway";
+
+
+/* The library files */
+@import 'lib/font-awesome';
+@import 'lib/bootstrap';
+
+/* Common styles across the site */
+
+@import "common/site";
+
+/* Header related styles */
+@import "common/header";

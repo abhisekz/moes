@@ -1,0 +1,41 @@
+footer {
+  background: #295166;
+  padding: 50px 0;
+  color: #ffffff;
+  p {
+    color: rgba(255,255,255,0.8);
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom:20px;
+    color: rgba(255,255,255,0.8);
+  }
+  .footer-hdr {
+    font-size: 18px;
+    font-family: "Museo 700";
+    text-transform: uppercase;
+    margin-bottom:35px;
+  }
+  .footer-links {
+    margin-bottom: 20px;
+    i.fa {
+      font-size: 25px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+
+}
+.sub-footer {
+  background: #1d3947;
+  padding: 30px 0;
+  font-size: 12px;
+  color: rgba(255,255,255,0.25) !important;
+  text-transform: uppercase;
+  a {
+    color: rgba(255,255,255,0.25) !important;
+  }
+  p, ul {
+    margin-bottom: 0;
+  }
+}
